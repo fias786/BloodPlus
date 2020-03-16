@@ -71,7 +71,7 @@ class _LoginStateState extends State<LoginState> with SingleTickerProviderStateM
                           Padding(
                             padding: const EdgeInsets.fromLTRB(20,10,20,0),
                             child: RawMaterialButton(onPressed: () { Navigator.push(context, MaterialPageRoute(builder: (context)=> MyApp()),);
-                            }, fillColor: Colors.deepOrange,splashColor: Colors.yellow,
+                            }, fillColor: Color(0xFF7f00ff),splashColor: Colors.yellow,
                                   shape: StadiumBorder(),
                                   child: Padding(
                                     padding: const EdgeInsets.symmetric(

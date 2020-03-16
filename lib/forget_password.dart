@@ -47,7 +47,7 @@ class _MyForgetPasswordState extends State<MyForgetPassword> {
                 ),
                 Padding(
                     padding: const EdgeInsets.fromLTRB(20,10,20,0),
-                    child: RawMaterialButton(onPressed: () {  }, fillColor: Colors.deepOrange,splashColor: Colors.yellow,
+                    child: RawMaterialButton(onPressed: () {  }, fillColor: Color(0xFF7f00ff),splashColor: Colors.yellow,
                       shape: StadiumBorder(),
                       child: Padding(
                         padding: const EdgeInsets.symmetric(
