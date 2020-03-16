@@ -2,12 +2,16 @@ import 'package:flutter/material.dart';
 import 'forget_password.dart';
 import 'signup.dart';
 import 'main.dart';
+import 'package:flutter/services.dart';
 import 'package:flare_flutter/flare_actor.dart';
 import 'teddy_controller.dart';
 
 class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      statusBarIconBrightness: Brightness.dark,
+    ));
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Login Page",
