@@ -21,7 +21,7 @@ class _MySignUpState extends State<MySignUp> {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-          gradient: LinearGradient(colors: [Colors.blue,Colors.red],
+          gradient: LinearGradient(colors: [Color(0xFFF44336),Color(0xFF7f00ff)],
             begin: Alignment.topCenter,end: Alignment.bottomCenter,tileMode: TileMode.repeated,),
         ),
         child: Center(
@@ -32,7 +32,7 @@ class _MySignUpState extends State<MySignUp> {
                 padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                 child: TextField(keyboardType: TextInputType.emailAddress,
                   decoration: InputDecoration(
-                    icon: Icon(Icons.email),
+                    prefixIcon: Icon(Icons.email),
                     hintText: "Username",
                     border: OutlineInputBorder(),
                     fillColor: Colors.red,
@@ -42,9 +42,9 @@ class _MySignUpState extends State<MySignUp> {
               ),
               Padding(
                 padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
-                child: TextField(keyboardType: TextInputType.visiblePassword,
+                child: TextField(keyboardType: TextInputType.visiblePassword,obscureText: true,
                   decoration: InputDecoration(
-                    icon: Icon(Icons.lock),
+                    prefixIcon: Icon(Icons.lock),
                     hintText: "Password",
                     border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(4.0)),gapPadding: 4.0),
                     fillColor: Colors.red,
@@ -53,9 +53,9 @@ class _MySignUpState extends State<MySignUp> {
               ),
               Padding(
                 padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
-                child: TextField(keyboardType: TextInputType.visiblePassword,
+                child: TextField(keyboardType: TextInputType.visiblePassword,obscureText: true,
                   decoration: InputDecoration(
-                    icon: Icon(Icons.lock),
+                    prefixIcon: Icon(Icons.lock),
                     hintText: "Confirm Password",
                     border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(4.0)),gapPadding: 4.0),
                     fillColor: Colors.red,

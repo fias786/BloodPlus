@@ -22,7 +22,7 @@ class _MyForgetPasswordState extends State<MyForgetPassword> {
     return Scaffold(
         body: Container(
         decoration: BoxDecoration(
-        gradient: LinearGradient(colors: [Colors.blue,Colors.red],
+        gradient: LinearGradient(colors: [Color(0xFFF44336),Color(0xFF7f00ff)],
         begin: Alignment.topCenter,end: Alignment.bottomCenter,tileMode: TileMode.repeated,),
           ),
           child: Center(
@@ -38,7 +38,7 @@ class _MyForgetPasswordState extends State<MyForgetPassword> {
                   padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
                   child: TextField(keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
-                      icon: Icon(Icons.email),
+                      prefixIcon: Icon(Icons.email),
                       hintText: "Username",
                       border: OutlineInputBorder(),
                       fillColor: Colors.red,

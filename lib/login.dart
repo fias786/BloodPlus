@@ -35,7 +35,7 @@ class _LoginStateState extends State<LoginState> with SingleTickerProviderStateM
     return Scaffold(
       body: Container(
             decoration: BoxDecoration(
-            gradient: LinearGradient(colors: [Colors.blue,Colors.red],
+            gradient: LinearGradient(colors: [Color(0xFFF44336),Color(0xFF7f00ff)],
               begin: Alignment.topCenter,end: Alignment.bottomCenter,tileMode: TileMode.repeated,),
           ),
           child: Center(
@@ -46,19 +46,22 @@ class _LoginStateState extends State<LoginState> with SingleTickerProviderStateM
                             padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
                             child: TextField(keyboardType: TextInputType.emailAddress,
                                       decoration: InputDecoration(
-                                        icon: Icon(Icons.email),
+                                        prefixIcon: Icon(Icons.email),
                                           hintText: "Username",
-                                        border: OutlineInputBorder(),
-                                        fillColor: Colors.red,
-                                      ),
+                                        border: OutlineInputBorder(
 
-          ),
+                                        ),
+                                        fillColor: Colors.red,
+
+                                      ),
+                            ),
                           ),
                           Padding(
                             padding: const EdgeInsets.fromLTRB(20, 10, 20, 0),
-                            child: TextField(keyboardType: TextInputType.visiblePassword,
+                            child: TextFormField(keyboardType: TextInputType.visiblePassword,
+                             initialValue: "",obscureText: true,
                               decoration: InputDecoration(
-                                  icon: Icon(Icons.lock),
+                                  prefixIcon: Icon(Icons.lock),
                                   hintText: "Password",
                                 border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(4.0)),gapPadding: 4.0),
                                   fillColor: Colors.red,
@@ -89,14 +92,14 @@ class _LoginStateState extends State<LoginState> with SingleTickerProviderStateM
                           ),
                           Padding(
                             padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
-                            child: InkWell(child: const Text("Forget Password ?",style: TextStyle(fontSize: 20,color: Colors.deepPurple),),
+                            child: InkWell(child: const Text("Forget Password ?",style: TextStyle(fontSize: 20,color: Colors.white),),
                                     onTap: (){
                                         Navigator.push(context, MaterialPageRoute(builder: (context)=> ForgetPassword()),);
                                     },),
                           ),
                           Padding(
                             padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
-                            child: InkWell(child: const Text("Create new Account !!",style: TextStyle(fontSize: 20,color: Colors.deepPurple),)
+                            child: InkWell(child: const Text("Create new Account !!",style: TextStyle(fontSize: 20,color: Colors.white),)
                               , onTap: (){
                               Navigator.push(context, MaterialPageRoute(builder: (context)=> SignUp()),);
                               },),

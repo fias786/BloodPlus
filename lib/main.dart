@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'login.dart';
+import 'package:flutter/services.dart';
 import 'signup.dart';
 import 'forget_password.dart';
 
@@ -9,6 +10,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+        statusBarColor: Color(0000),
+        statusBarIconBrightness: Brightness.dark,
+    ));
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
@@ -33,16 +38,18 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
   static const TextStyle optionStyle = TextStyle(fontSize: 30,fontWeight: FontWeight.bold);
   List<Widget> _widgetOptions = <Widget>[
     Container(
-      child: Text("Index 0: Home",style: optionStyle,),
+      child: Center(
+        child: Text("Index 0: Home",style: optionStyle,),
+      ),
     ),
     Container(
-        child: Text("Index 1: Dashboard",style: optionStyle,)
+        child: Center(child: Text("Index 1: Dashboard",style: optionStyle,))
     ),
     Container(
-        child: Text("Index 2: Notification",style: optionStyle,)
+        child: Center(child: Text("Index 2: Notification",style: optionStyle,))
     ),
     Container(
-        child: Text("Index 3: Setting",style: optionStyle,)
+        child: Center(child: Text("Index 3: Setting",style: optionStyle,))
     ),
   ];
 
