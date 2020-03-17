@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'login.dart';
 import 'package:flutter/services.dart';
-import 'signup.dart';
-import 'forget_password.dart';
+import 'home.dart';
+import 'notification.dart';
+import 'settings.dart';
+import 'dashboard.dart';
 
 void main() => runApp(Login());
 
@@ -35,22 +37,12 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateMixin {
   int _selectedIndex = 0;
-  static const TextStyle optionStyle = TextStyle(fontSize: 30,fontWeight: FontWeight.bold);
+  static const TextStyle optionStyle = TextStyle(fontSize: 25,fontWeight: FontWeight.bold);
   List<Widget> _widgetOptions = <Widget>[
-    Container(
-      child: Center(
-        child: Text("Index 0: Home",style: optionStyle,),
-      ),
-    ),
-    Container(
-        child: Center(child: Text("Index 1: Dashboard",style: optionStyle,))
-    ),
-    Container(
-        child: Center(child: Text("Index 2: Notification",style: optionStyle,))
-    ),
-    Container(
-        child: Center(child: Text("Index 3: Setting",style: optionStyle,))
-    ),
+    Home(),
+    DashBoard(),
+    NotificationPage(),
+    Settings(),
   ];
 
   void _onItemTapped(int index){

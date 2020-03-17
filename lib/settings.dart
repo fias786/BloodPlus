@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
 class Settings extends StatelessWidget {
+  final TextStyle optionStyle = TextStyle(fontSize: 25,fontWeight: FontWeight.bold);
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+        child: Center(child: Text("Index 3: Setting",style: optionStyle,))
+    );
   }
 }
 

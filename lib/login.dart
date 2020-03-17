@@ -98,7 +98,7 @@ class _LoginStateState extends State<LoginState> with SingleTickerProviderStateM
                             padding: const EdgeInsets.fromLTRB(20, 20, 20, 0),
                             child: InkWell(child: const Text("Forget Password ?",style: TextStyle(fontSize: 20,color: Colors.white),),
                                     onTap: (){
-                                        Navigator.push(context, MaterialPageRoute(builder: (context)=> ForgetPassword()),);
+                                        Navigator.push(context, MaterialPageRoute(builder: (context)=> ForgetPassword()));
                                     },),
                           ),
                           Padding(
