@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
     Home(),
     DashBoard(),
     NotificationPage(),
-    Settings(),
+    MySettings(),
   ];
 
   void _onItemTapped(int index){
