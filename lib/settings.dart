@@ -34,6 +34,7 @@ class _MySettingsState extends State<MySettings> {
                     padding: const EdgeInsets.fromLTRB(0,0,10,0),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text("Saif Ali",style: TextStyle(color: Colors.black,fontSize: 18,fontWeight: FontWeight.bold),),
                         Text("See your profile",style: TextStyle(color: Colors.grey,fontSize: 14),)

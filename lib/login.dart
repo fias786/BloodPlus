@@ -56,7 +56,6 @@ class _LoginStateState extends State<LoginState> with SingleTickerProviderStateM
 
                                         ),
                                         fillColor: Colors.red,
-
                                       ),
                             ),
                           ),
