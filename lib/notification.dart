@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class NotificationPage extends StatelessWidget {
-  final TextStyle optionStyle = TextStyle(fontSize: 30,fontWeight: FontWeight.bold);
+  final TextStyle optionStyle = TextStyle(fontSize: 25,fontWeight: FontWeight.bold);
   @override
   Widget build(BuildContext context) {
     return Container(
